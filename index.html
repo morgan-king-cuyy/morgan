@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Chat Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header / Profil Karakter -->
+        <header class="app-header">
+            <div class="character-info">
+                <div class="avatar-wrapper">
+                    <!-- Ganti 'avatar.jpg' dengan file gambar yang akan kamu kirim nanti -->
+                    <img src="rusdi.jpg" alt="Character Avatar" id="charAvatar">
+                </div>
+                <div class="status-info">
+                    <h2>Shina Mahiru</h2>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Window -->
+        <main class="chat-window" id="chatWindow">
+            <div class="message bot">
+                <div class="bubble">Halo! Aku sedang menunggumu. Ada yang ingin kamu bicarakan hari ini?</div>
+            </div>
+        </main>
+
+        <!-- Input Area -->
+        <footer class="input-area">
+            <input type="text" placeholder="Ketik pesan..." id="userInput">
+            <button id="sendBtn">Kirim</button>
+        </footer>
+    </div>
+
+    <!-- Audio Player (Hidden) -->
+    <audio id="bgMusic" loop>
+        <!-- Masukkan link file lagu kamu di sini -->
+        <source src="gata.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
